@@ -11,8 +11,8 @@ SPLUNK_DIR="/opt/splunk"
 # Download Splunk Enterprise package
 wget -O ${SPLUNK_FILENAME} "${SPLUNK_URL}"
 
-# Install Splunk Enterprise
-sudo rpm -i ${SPLUNK_FILENAME}
+# Extract Splunk Enterprise
+sudo tar -zxvf "$SPLUNK_FILENAME" -C "$SPLUNK_DIR"
 
 # Start Splunk Enterprise
 sudo ${SPLUNK_DIR}/bin/splunk start --accept-license
