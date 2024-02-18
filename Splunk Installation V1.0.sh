@@ -14,6 +14,9 @@ wget -O ${SPLUNK_FILENAME} "${SPLUNK_URL}"
 # Extract Splunk Enterprise
 sudo tar -zxvf "$SPLUNK_FILENAME" -C "$SPLUNK_DIR"
 
+# permissions to execute
+sudo chmod +x ${SPLUNK_FILENAME}
+
 # Start Splunk Enterprise
 sudo ${SPLUNK_DIR}/bin/splunk start --accept-license
 
