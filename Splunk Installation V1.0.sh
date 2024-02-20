@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Splunk version and download URL
-SPLUNK_VERSION="9.2.0.1"
-SPLUNK_FILENAME="splunk-${SPLUNK_VERSION}-d8ae995bf219-Linux-x86_64.tgz"
-SPLUNK_URL="https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux &version=${SPLUNK_VERSION}&product=splunk&filename=${SPLUNK_FILENAME}&wget=true"
+#SPLUNK_VERSION="9.2.0.1"
+SPLUNK_FILENAME="splunk-9.2.0.1-d8ae995bf219-Linux-x86_64.tgz"
+SPLUNK_URL="https://download.splunk.com/products/splunk/releases/9.2.0.1/linux/${SPLUNK_FILENAME}"
 
 # Directory to store Splunk installation files
 SPLUNK_DIR="/opt/splunk"
